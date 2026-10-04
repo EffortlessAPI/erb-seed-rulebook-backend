@@ -1,0 +1,44 @@
+{
+  "SSoTmeProjectId": "7dc3384e-b45b-489a-99c0-c8a314723bb0",
+  "Name": "rulebook-backend",
+  "Description": "Backend add-in: Postgres schema, a Node + Express API, TypeScript SDK and the gold answer key, built from the project's rulebook.",
+  "ProjectSettings": [],
+  "ProjectTranspilers": [
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-postgres",
+      "RelativePath": "/postgres",
+      "CommandLine": "rulebook-to-postgres -i ../../effortless-rulebook/effortless-rulebook.json -p schema=$postgresSchema$ -w 540000",
+      "IsDisabled": false,
+      "Description": "Postgres schema, vw_* views, calc functions and seed data"
+    },
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-node-postgres-api",
+      "RelativePath": "/api",
+      "CommandLine": "rulebook-to-node-postgres-api -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
+      "IsDisabled": false,
+      "Description": "Node + Express API over the generated Postgres views"
+    },
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-typescript",
+      "RelativePath": "/typescript",
+      "CommandLine": "rulebook-to-typescript -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
+      "IsDisabled": false,
+      "Description": "TypeScript types and SDK for every table and derived field"
+    },
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-gold-answer-key",
+      "RelativePath": "/gold-answer-key",
+      "CommandLine": "rulebook-to-gold-answer-key -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
+      "IsDisabled": true,
+      "Description": "Every derived value computed by Postgres: the answer key other substrates are checked against (disabled: the published tool cannot reach rulebook-to-postgres yet; enable once it can)"
+    }
+  ],
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "CurrentPath": null,
+  "SSoTmeProjectFiles": null
+}
