@@ -3,7 +3,7 @@
     "id": "rulebook-backend",
     "displayName": "Backend API",
     "tagline": "Postgres, a Node API and a TypeScript SDK from your rulebook.",
-    "description": "Adds a backend/ folder built from the project's rulebook: the Postgres schema, vw_* views, calc functions and seed data; a Node + Express API over those views; a TypeScript SDK with every table and derived field; and, as an optional step, the gold answer key (every derived value computed by Postgres) that other substrates are checked against.",
+    "description": "Adds a backend/ folder built from the project's rulebook: the Postgres schema, vw_* views, calc functions and seed data; a Node + Express API over those views; a TypeScript SDK with every table and derived field; and the gold answer key (every derived value computed by Postgres) that other substrates are checked against.",
     "kind": "child",
     "category": "api",
     "stack": "Postgres, Node, Express, TypeScript",

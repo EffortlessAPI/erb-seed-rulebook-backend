@@ -33,8 +33,8 @@
       "Name": "rulebook-to-gold-answer-key",
       "RelativePath": "/gold-answer-key",
       "CommandLine": "rulebook-to-gold-answer-key -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
-      "IsDisabled": true,
-      "Description": "Every derived value computed by Postgres: the answer key other substrates are checked against (disabled: the published tool cannot reach rulebook-to-postgres yet; enable once it can)"
+      "IsDisabled": false,
+      "Description": "Every derived value computed by Postgres: the answer key other substrates are checked against"
     }
   ],
   "ShowHidden": false,

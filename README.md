@@ -11,7 +11,7 @@ rulebook of its own: every step reads the project's
 | `postgres/` | rulebook-to-postgres | Schema, `vw_*` views, calc functions, seed data, `init-db.sh` |
 | `api/` | rulebook-to-node-postgres-api | Node + Express API over the views (`npm install && npm start`, port 42441, `PG*` env for the database) |
 | `typescript/` | rulebook-to-typescript | TypeScript types and SDK for every table and derived field |
-| `gold-answer-key/` | rulebook-to-gold-answer-key | Optional, **disabled by default**: every derived value computed by Postgres. Run it with `effortless build -id rulebook-to-gold-answer-key` once the published tool can reach rulebook-to-postgres. |
+| `gold-answer-key/` | rulebook-to-gold-answer-key | `gold-answer-key.json` (every derived value computed by Postgres), `blank-test.json` (the raw facts only) and `gold-answer-key-report.json`: the answer key other substrates are checked against. |
 
 ## Questions
 
